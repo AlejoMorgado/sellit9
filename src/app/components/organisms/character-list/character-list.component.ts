@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { CharacterService } from '../../../services/character.service';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-character-list',
@@ -20,6 +21,7 @@ export class CharacterListComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
+    this.showLoading();
     this.loadCharacters();
 
     this.charactersUpdatedSub = this.characterService
@@ -35,9 +37,21 @@ export class CharacterListComponent implements OnInit, OnDestroy {
     }
   }
 
+  showLoading(): void {
+    Swal.fire({
+      title: 'Cargando...',
+      text: 'Por favor, espere',
+      allowOutsideClick: false,
+      didOpen: () => {
+        Swal.showLoading();
+      },
+    });
+  }
+
   loadCharacters(): void {
     this.characterService.getCharacters().subscribe((data) => {
       this.characters = data;
+      Swal.close(); // Cierra el loading spinner cuando se han cargado los datos
     });
   }
 
