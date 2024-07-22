@@ -10,7 +10,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Cloning the Repository
 
-To clone the repository using SSH, run the following command:
+To clone the repository using SSH or HTTPS, run the following command:
+
+```bash
+https://github.com/AlejoMorgado/sellit9.git
+```
 
 ```bash
 git clone git@github.com:AlejoMorgado/sellit9.git
