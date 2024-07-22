@@ -1,0 +1,6 @@
+<button class="button" [ngClass]="customClass">
+  {{ label }}
+  <ng-container *ngIf="icon">
+    <span class="material-symbols-outlined">{{ icon }}</span>
+  </ng-container>
+</button>

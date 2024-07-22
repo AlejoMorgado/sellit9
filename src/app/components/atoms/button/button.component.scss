@@ -1,0 +1,46 @@
+/* button.component.scss */
+.button {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  color: black;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  .material-symbols-outlined {
+    font-size: 20px;
+  }
+
+  &:hover {
+    background-color: #00b57c;
+  }
+}
+
+.button-edit {
+  align-items: center;
+  border-radius: 24px;
+  background-color: #fff;
+  &:hover {
+    background-color: black;
+    transform: scale(1.05);
+    opacity: 0.9;
+    color: #fff;
+  }
+}
+
+.button-delete {
+  align-items: center;
+  border-radius: 24px;
+  background-color: red;
+  &:hover {
+    color: red;
+    transform: scale(1.05);
+    opacity: 0.9;
+    background-color: black;
+  }
+}

@@ -1,0 +1,42 @@
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  &__wrapper {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #738a9055;
+    color: white;
+    border-radius: 24px;
+  }
+  &__logo img {
+    height: 40px;
+    border-radius: 24px;
+  }
+
+  &__nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-left: 20px;
+
+      a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s;
+
+        &:hover {
+          color: #ff4081;
+        }
+      }
+    }
+  }
+}
