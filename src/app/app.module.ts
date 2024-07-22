@@ -19,7 +19,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './components/header/header.component';
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import { InputFieldComponent } from './components/atoms/input-field/input-field.component';
-import { CharacterFormFieldsComponent } from './character-form-fields/character-form-fields.component';
+import { CharacterFormFieldsComponent } from './components/molecules/character-form-fields/character-form-fields.component';
 @NgModule({
   declarations: [
     AppComponent,
