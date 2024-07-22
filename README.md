@@ -1,6 +1,32 @@
-# MyAngularApp
+# Sellit9
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.1.
+## Technologies Used
+
+- **Angular**: A platform for building mobile and desktop web applications.
+- **TypeScript**: A superset of JavaScript that adds static types.
+- **SCSS**: A syntax of Sass, a CSS preprocessor.
+- **Sweet Library**: Used for UI components and notifications.
+
+## Cloning the Repository
+
+To clone the repository using SSH or HTTPS, run the following command:
+
+```bash
+https://github.com/AlejoMorgado/sellit9.git
+```
+
+```bash
+git clone git@github.com:AlejoMorgado/sellit9.git
+```
+
+```bash
+cd sellit9
+```
+
+```bash
+npm install
+```
 
 ## Development server
 
