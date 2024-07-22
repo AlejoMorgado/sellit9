@@ -51,7 +51,7 @@ export class CharacterListComponent implements OnInit, OnDestroy {
   loadCharacters(): void {
     this.characterService.getCharacters().subscribe((data) => {
       this.characters = data;
-      Swal.close(); // Cierra el loading spinner cuando se han cargado los datos
+      Swal.close();
     });
   }
 
