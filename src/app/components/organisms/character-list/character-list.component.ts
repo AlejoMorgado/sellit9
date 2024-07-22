@@ -39,8 +39,8 @@ export class CharacterListComponent implements OnInit, OnDestroy {
 
   showLoading(): void {
     Swal.fire({
-      title: 'Cargando...',
-      text: 'Por favor, espere',
+      title: 'Loading...',
+      text: 'Please wait',
       allowOutsideClick: false,
       didOpen: () => {
         Swal.showLoading();
