@@ -1,0 +1,36 @@
+<div class="character-card">
+  <div
+    class="character-card__background"
+    [ngStyle]="{ 'background-image': 'url(' + character.image + ')' }"
+  ></div>
+  <img
+    class="character-card__image"
+    src="{{ character.image }}"
+    alt="{{ character.name }}"
+  />
+  <p class="character-card__name">{{ character.name }}</p>
+  <div class="character-card__infoContainer">
+    <p class="character-card__status">{{ character.gender }}</p>
+    <p class="character-card__status">{{ character.species }}</p>
+  </div>
+
+  <div class="character-card__buttons">
+    <app-button
+      label=""
+      icon="edit"
+      [color]="'#fff'"
+      [customClass]="'button-edit'"
+      (click)="openEditDialog()"
+    >
+    </app-button>
+
+    <app-button
+      label=""
+      icon="delete"
+      [color]="'#f44336'"
+      [customClass]="'button-delete'"
+      (click)="deleteCharacter()"
+    >
+    </app-button>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>{{ isEdit ? "Edit Character" : "Create Character" }}</h1>
+<div mat-dialog-content>
+  <form [formGroup]="characterForm" (ngSubmit)="onSubmit()">
+    <app-character-form-fields
+      [form]="characterForm"
+    ></app-character-form-fields>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onClose()">Cancel</button>
+  <button mat-button (click)="onSubmit()">Save</button>
+</div>

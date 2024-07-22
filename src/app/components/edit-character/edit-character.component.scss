@@ -1,0 +1,15 @@
+/* edit-character.component.scss */
+.edit-character {
+  padding: 10px;
+  border: 1px solid #ccc;
+
+  label {
+    display: block;
+    margin: 10px 0;
+  }
+
+  input {
+    padding: 5px;
+    margin-left: 10px;
+  }
+}

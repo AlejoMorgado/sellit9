@@ -1,0 +1,7 @@
+<!-- character-list.component.html -->
+
+<div class="character-list">
+  <div *ngFor="let character of characters" class="character-list__item">
+    <app-character-card [character]="character"></app-character-card>
+  </div>
+</div>
